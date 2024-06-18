@@ -61,6 +61,13 @@ def countdown1(start):
         countdown1(start - 1)
 
 countdown1(10)
+#------------------1.3----------------------
+print('\n-1. Countdown 1.3 -')
+def forcountdown(x):
+    for x in range(0, x+1)[::-1]:
+        print(x)
+        x-1
+forcountdown(10)
 #------------------2.-----------------------
 print('\n-2. Messreihe-')
 #messwerte = [3, 10]
