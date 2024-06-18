@@ -35,13 +35,32 @@ import random
 import time
 
 def countdown(numbers):
-    if numbers < 0:                         # Stop by 0
+    if numbers < 0:                         # Stop by 0 kann auch ==
         return
     else:
         time.sleep(0.05)                    # Delay
         print('This is Number: ', numbers)  # print after each step
         countdown(numbers - 1)              # each step takes -1
-countdown(50)
+countdown(10)
+#------------------1.1----------------------
+print('\n-1. Countdown 1.1 -')
+def countup(x,y):
+    
+    while x <= y:
+        print(x)
+        x += 1
+
+countup(0, 10)
+#------------------1.2----------------------
+print('\n-1. Countdown 1.2 -')
+def countdown1(start):
+    if start >= 0:
+        print(start)
+        for i in range (10000000):           # alternative for time
+            pass
+        countdown1(start - 1)
+
+countdown1(10)
 #------------------2.-----------------------
 print('\n-2. Messreihe-')
 #messwerte = [3, 10]
